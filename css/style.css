@@ -16,9 +16,134 @@
   font-weight: 700;
 }
 
-body {
+.body {
   position: relative;
   font-family: 'Roboto';
   font-weight: 400;
   /* font-style: italic; */
+  max-width: 1392px;
+  margin: 0 auto;
 }
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  font-weight: 700;
+  font-size: 18px;
+  margin-left: 44px;
+  margin-top: 20px;
+}
+.logo a {
+  color: #4754EB;
+}
+.nav {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0 24px;
+  list-style-type: none;
+  font-size: 18px;
+  margin-top: 20px;
+}
+.nav a {
+  color: #808080;
+}
+.right-menu {
+  display: flex;
+  align-items: center;
+  gap: 0 20px;
+}
+.language {
+  margin-top: 10px;
+}
+.language a {
+  color: #808080;
+}
+.language .active {
+  color: #4754EB;
+  font-weight: 700;
+}
+
+  /* особое затруднение вызвало позиционирование текста по вертикали в центре кнопки */
+
+.bottom {
+  background-color: var(--color-blue);
+  border: 1px solid var(--color-blue);
+  border-radius: 16px;
+  margin-top: 10px;
+  /* width: 220px; */
+  padding: 12px 24px;
+  text-align: center;
+  font-weight: 700;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.bottom:hover {
+  border: 1px solid var(--color-blue);
+  background-color: white;
+  color: var(--color-blue);
+}
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  height: 720px;
+}
+
+.header-content,
+.header-banner {
+  width: 50%;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.header-banner {
+  position: relative;
+}
+
+.banner {
+  position: absolute;
+  background-image: url(../images/Saly-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100%;
+  /* padding-left: 708px; */
+  width: 100%;
+  aspect-ratio: 628/720;
+  /* height: 720px; */
+}
+.h1 {
+  padding-left: 56px;
+  padding-top: 120px;
+  font-size: 56px;
+  max-width: 268px;
+  font-weight: 500;
+}
+.subscribe {
+  position: relative;
+  margin-top: 50px;
+  margin-left: 56px;
+  width: 465px;
+  border: 1px solid #595959;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 20px 16px;
+  border-radius: 16px;
+  height: 64px;
+}
+.subscribe input,
+.subscribe button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  border: 1px solid white;
+}
+
+  /* особое затруднение вызвало стилизация формы, на курсах мы их не проходили еще */
+
+.text-button {
+  font-size: 12px;
+}
+.text-button a {
+  color: #4754EB;
+}
+ /* особое затруднение вызвало позиционирование фоновой картинки */
