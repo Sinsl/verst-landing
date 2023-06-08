@@ -1,0 +1,74 @@
+.box-flex {
+  max-width: 1000px;
+  width: 90%;
+  margin: 50px auto;
+  border: 2px solid red;
+  display: flex;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+  gap: 20px;
+  padding: 20px;
+}
+
+.chld-flex {
+  min-width: 50px;
+  /* width: 300px; */
+  /* width: 100px; */
+  /* width: calc((100% - 20px * 5) / 4); */
+  height: 50px;
+  border: 1px solid black;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 30px;
+}
+/* .chld-flex:nth-child(2), */
+.chld-flex:nth-child(3) {
+  background-color:red;
+  /* flex-shrink: 1; */
+  /* flex-grow: 1; */
+}
+
+
+
+
+/* ---- Блок с картинками ------- */
+.box-conteiner {
+  max-width: 1000px;
+  width: 90%;
+  margin: 50px auto;
+  border: 2px solid red;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.box-cnt-item {
+  border: 1px solid #aaa;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+.box-cnt-item img {
+  width: 100%;
+}
+.box-cnt-item_link {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-grow: 1;
+  /* border: 2px solid #787878; */
+}
+
+.box-cnt-item a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  border: 1px solid #787878;
+  width: 100px;
+  text-align: center;
+  padding: 10px 20px;
+  margin-top: 30px;
+}

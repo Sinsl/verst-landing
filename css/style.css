@@ -31,7 +31,7 @@
 .logo {
   font-weight: 700;
   font-size: 18px;
-  margin-left: 44px;
+  padding-left: 56px;
   margin-top: 20px;
 }
 .logo a {
@@ -63,9 +63,6 @@
   color: #4754EB;
   font-weight: 700;
 }
-
-  /* особое затруднение вызвало позиционирование текста по вертикали в центре кнопки */
-
 .bottom {
   background-color: var(--color-blue);
   border: 1px solid var(--color-blue);
@@ -89,6 +86,7 @@
   justify-content: space-between;
   position: relative;
   height: 720px;
+  z-index: 0;
 }
 
 .header-content,
@@ -99,6 +97,7 @@
 }
 .header-banner {
   position: relative;
+  height: 100%;
 }
 
 .banner {
@@ -107,10 +106,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 100%;
-  /* padding-left: 708px; */
   width: 100%;
-  aspect-ratio: 628/720;
-  /* height: 720px; */
+  height: 100%;
+  /* aspect-ratio: 628/720; */
 }
 .h1 {
   padding-left: 56px;
@@ -120,6 +118,9 @@
   font-weight: 500;
 }
 .subscribe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: relative;
   margin-top: 50px;
   margin-left: 56px;
@@ -136,14 +137,94 @@
   -moz-appearance: none;
   outline: none;
   border: 1px solid white;
+  /*width: 50%;
+  flex-grow: 1;
+  flex-shrink: 0;
+  
+  с этим кодом немного не разобрался, с ним как-то хуже внешне выглядит или я что-то не так делаю
+  */
 }
-
-  /* особое затруднение вызвало стилизация формы, на курсах мы их не проходили еще */
-
+.subscribe button {
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  color: var(--color-blue);
+  font-weight: 600;
+  text-align: center;
+  padding: 12px 24px;
+  cursor: pointer;
+}
 .text-button {
   font-size: 12px;
+  max-width: 354px;
+  margin-top: 16px;
+  margin-left: 64px;
 }
 .text-button a {
   color: #4754EB;
 }
- /* особое затруднение вызвало позиционирование фоновой картинки */
+.art-header {
+  padding-left: 56px;
+}
+.art-content {
+  padding-left: 24px;
+}
+/* скролл не виден, так-как он белый на белом фоне */
+.scroll {
+  display: flex;
+  align-items: center;
+  margin-left: 56px;
+  margin-top: 126px;
+  background-color: transparent;
+}
+.pic-scroll {
+  background-image: url(../svg/wheeldown.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  width: 24px;
+  height: 32px;
+}
+.text-scroll {
+  display: block;
+  padding-left: 8px;
+  color: #FFFFFF;
+}
+.art-header {
+  font-size: 24px;
+}
+.art-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+.head-section {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+.smile-section {
+  display: block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 56px;
+  height: 56px;
+}
+.one {
+  background-image: url(../svg/emoji-01.svg);
+}
+.two {
+  background-image: url(../svg/emoji-02.svg);
+}
+.three {
+  background-image: url(../svg/emoji-03.svg);
+}
+.header-section {
+  margin-left: 12px;
+  font-size: 20px;
+}
+.text-section {
+  max-width: 389px;
+  font-size: 18px;
+  color: #808080;
+}
