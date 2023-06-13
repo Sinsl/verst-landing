@@ -88,7 +88,24 @@
   height: 720px;
   z-index: 0;
 }
-
+.header::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(45deg, var(--color-red) 0%, var(--color-blue) 18%, var(--color-blue) 20%, white 40%);
+  opacity: 0.4;
+}
+.header::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: radial-gradient(circle farthest-corner at 60% 60%, white 0%, var(--color-blue) 13%, transparent 30%);
+  opacity: 0.3;
+}
 .header-content,
 .header-banner {
   width: 50%;
@@ -99,12 +116,29 @@
   position: relative;
   height: 100%;
 }
-
+.header-banner_round__blue {
+  position: absolute;
+  width: 302px;
+  height: 302px;
+  border-radius: 50%;
+  background-color: var(--color-blue);
+  left: 0;
+  top: 280px;
+}
+.header-banner_round__white {
+  position: absolute;
+  width: 465px;
+  height: 465px;
+  border-radius: 50%;
+  background-color: white;
+  left: 163px;
+  top: 80px;
+}
 .banner {
   position: absolute;
   background-image: url(../images/Saly-1.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   background-position: 100%;
   width: 100%;
   height: 100%;
@@ -124,7 +158,7 @@
   position: relative;
   margin-top: 50px;
   margin-left: 56px;
-  width: 465px;
+  width: calc(100% - 56px - 20px);
   border: 1px solid #595959;
   background: rgba(255, 255, 255, 0.5);
   padding: 20px 16px;
@@ -143,6 +177,10 @@
   
   с этим кодом немного не разобрался, с ним как-то хуже внешне выглядит или я что-то не так делаю
   */
+}
+.subscribe input {
+  background: transparent;
+  border: none;
 }
 .subscribe button {
   background-color: #FFFFFF;
