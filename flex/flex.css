@@ -5,16 +5,17 @@
   border: 2px solid red;
   display: flex;
   justify-content: space-between;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   gap: 20px;
   padding: 20px;
 }
 
 .chld-flex {
   min-width: 50px;
+  /* width: 100%; */
   /* width: 300px; */
   /* width: 100px; */
-  /* width: calc((100% - 20px * 5) / 4); */
+  width: calc((100% - 20px * 5) / 4);
   height: 50px;
   border: 1px solid black;
   text-align: center;
