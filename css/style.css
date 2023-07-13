@@ -23,6 +23,7 @@
   font-family: 'Roboto';
   font-weight: 400;
   /* font-style: italic; */
+  width: 100%;
   max-width: 1392px;
   margin: 0 auto;
 }
@@ -605,6 +606,112 @@
   cursor: pointer;
   font-size: 18px;
   color: var(--color-blue);
+}
+
+
+/* ==========  SALE  ===========*/
+.article-sale .art-body {
+  padding: 88px 0;
+}
+.article-sale .art-content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 24px;
+}
+.sale-get{
+  width: 50%;
+}
+.sale-img {
+  width: 50%;
+  padding: 0 7%;
+}
+.sale-get {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+}
+.sale-img-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.sale-get_desc {
+  /* padding: 120px 57px 40px 708px; */
+  font-size: 56px;
+}
+.sale-get_box {
+  /* padding: 0 220px 16px 708px; */
+}
+.mail_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 465px;
+  width: calc(100% - 56px - 20px);
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 16px;
+  height: 64px;
+  border: 1px solid #F2F2F2;
+}
+.mail_box input,
+.mail_box button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  border: 1px solid white;
+}
+.mail_box input {
+  background: transparent;
+  border: none;
+  padding-left: 10px;
+}
+.mail_box button {
+  background-color: var(--color-blue);
+  border-radius: 16px;
+  color: #FFFFFF;
+  font-weight: 600;
+  text-align: center;
+  padding: 12px 24px;
+  cursor: pointer;
+}
+.sale-get_box .text-button {
+  font-size: 12px;
+  max-width: 354px;
+  margin: 16px 0 0 10px;
+  padding-bottom: 158px;
+}
+.text-button a {
+  color: #4754EB;
+}
+.round-for-men {
+  position: absolute;
+  width: 100%;
+  /* height: 480px; */
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(235,71,139,0.5) 0%, rgba(169,105,201,0.5) 75%, rgba(71,84,235,0.5) 100%);
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.sale-img-men {
+  position: absolute;
+  background-image: url(../svg/men.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 100%;
+  /* max-width: 628px; */
+  width: 120%;
+  /* height: 640px; */
+  aspect-ratio: 1/1;
+  margin: auto;
+  top: -40px;
+  left: -40px;
+  /* top: -2px; */
+  /* margin-left: 38px; */
+  z-index: 1;
 }
 
 
