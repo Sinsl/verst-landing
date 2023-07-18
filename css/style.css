@@ -714,6 +714,75 @@
   z-index: 1;
 }
 
+/* ==========  FAQ  ===========*/
+.faq {
+  width: 100%;
+  background-color: #ddd;
+}
+.faq-body {
+  width: 100%;
+  padding: 80px 25px;
+}
+.faq-title {
+  margin-left: 32px;
+}
+.faq-title h2{
+  font-size: 36px;
+}
+.faq-content {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  row-gap: 20px;
+}
+.question{
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: 16px;
+  overflow: hidden;
+}
+.faq-head {
+  padding: 24px 32px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.faq-head h3 {
+  font-size: 36px;
+}
+.faq-head span {
+  display: block;
+  width: 48px;
+  height: 48px;
+  font-size: 50px;
+  border: 1px solid white;
+  border-radius: 50%;
+  line-height: 0.6;
+  text-align: center;
+  font-weight: 400;
+  transform: rotate(45deg);
+  transition: transform 2s;
+}
+.answer {
+  color:#808080;
+  font-size: 18px;
+  padding: 0 48px 0 24px;
+  max-height: 0;
+  transition: padding 2s, max-height 2s;
+}
+.active-q .answer {
+  max-height: 200px;
+  padding: 16px 48px 24px 24px;
+  transition: padding 2s, max-height 2s;
+}
+.active-q .faq-head span {
+  transform: rotate(0);
+  transition: transform 2s;
+}
+
+
+
 
 /* ==========  FOOTER  ===========*/
 .footer {
