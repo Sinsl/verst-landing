@@ -6,13 +6,22 @@
   <title>Project</title>
   <link rel="stylesheet" href="./css/normalize.css"/>
   <link rel="stylesheet" href="./css/style.css"/>
+  <link rel="stylesheet" href="./css/responsive.css"/>
 </head>
 <body>
   <div class="body">
     <div class="menu">
+      <input class="burger" type="checkbox">
+      <ul class="burger-icon">
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
       <div class="logo"><a href="/">Инстаботы</a></div>
+      
       <nav>
         <ul class="nav">
+          <li>Меню</li>
           <li><a href="#">О компании</a></li>
           <li><a href="#">Тарифы</a></li>
           <li><a href="#">Отзывы</a></li>
@@ -27,24 +36,24 @@
     </div>
     <header class="header">
       <div class="header-wrap">
-      <div class="header-content">
-        <h1 class="h1">Высокий уровень вовлечения представителей</h1>
-        <form class="subscribe">
-          <input type="email" id="email" name="email" placeholder="Введите свой e-mail" required>
-          <button type="submit">Отправить</button>
-         </form>
-        <p class="text-button">Нажимая на кнопку вы соглашаетесь на обработку <a href="#">персональных данных</a></p>
-        <div class="scroll">
-          <span class="pic-scroll"></span>  
-          <span class="text-scroll">Листайте дальше</span>
+        <div class="header-content">
+          <h1 class="h1">Высокий уровень вовлечения представителей</h1>
+          <form class="subscribe">
+            <input type="email" id="email" name="email" placeholder="Введите свой e-mail" required>
+            <button type="submit">Отправить</button>
+          </form>
+          <p class="text-button">Нажимая на кнопку вы соглашаетесь на обработку <a href="#">персональных данных</a></p>
+          <div class="scroll">
+            <span class="pic-scroll"></span>  
+            <span class="text-scroll">Листайте дальше</span>
+          </div>
         </div>
-      </div>
-      <div class="header-banner">
-        <div class="header-banner_round__blue"></div>
-        <div class="header-banner_round__white"></div>
-        <div class="banner"></div>
-      </div>
-    </div>      
+        <div class="header-banner">
+          <!-- <div class="header-banner_round__blue"></div>
+          <div class="header-banner_round__white"></div> -->
+          <div class="banner"></div>
+        </div>
+      </div>      
     </header>
     <main class="main">
       <article class="article-first">
@@ -90,29 +99,24 @@
           </header>
         <div class="article-second-content">
           <div class="article-second-left">
-            <div class="banner-second_round__pink"></div>
-            <!-- <div class="article-second-banner"> -->
-              <div class="banner-second_round__white">                
-                <div class="banner-second"></div>
-              </div>              
-            <!-- </div> -->
+            <div class="banner-second"></div>
           </div>
           <div class="article-second-right">
             <div class="box">
               <div class="top-box">
-            <div class="scroll-second">
-              <a href="" class="active">Lorem ipsum</a> - <a href="">Lorem ipsum</a> - <a href="">Lorem ipsum</a>
-            </div>
-            <div class="second-right-header">
-              <h2>Lorem ipsum dolor sit amet, consectetur.</h2>
-            </div> 
-            <div class="second-right-description">
-              Semper sollicitudin ut cursus nunc eu ultricies.
-            </div>
-            <div class="second-right-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Posuere lorem nulla tincidunt egestas nibh. Non orci, et massa sed vulputate proin. Eu euismod diam, arcu sit vitae nam. Tristique orci, ornare sit vel amet. <br /><br />
-Ut elit dui iaculis malesuada in auctor dui. Sollicitudin varius vitae ut vitae lacus, sem dolor fermentum enim. Orci orci interdum pretium adipiscing augue sit nisl adipiscing.
-            </div>
+                <div class="scroll-second">
+                  <a href="" class="active">Lorem ipsum</a> - <a href="">Lorem ipsum</a> - <a href="">Lorem ipsum</a>
+                </div>
+                <div class="second-right-header">
+                  <h2>Lorem ipsum dolor sit amet, consectetur.</h2>
+                </div> 
+                <div class="second-right-description">
+                  Semper sollicitudin ut cursus nunc eu ultricies.
+                </div>
+                <div class="second-right-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Posuere lorem nulla tincidunt egestas nibh. Non orci, et massa sed vulputate proin. Eu euismod diam, arcu sit vitae nam. Tristique orci, ornare sit vel amet. <br /><br />
+    Ut elit dui iaculis malesuada in auctor dui. Sollicitudin varius vitae ut vitae lacus, sem dolor fermentum enim. Orci orci interdum pretium adipiscing augue sit nisl adipiscing.
+                </div>
               </div>
               <div class="bottom-box">
                 <div class="bottom">Забронировать звонок</div>
@@ -315,10 +319,7 @@ Ut elit dui iaculis malesuada in auctor dui. Sollicitudin varius vitae ut vitae 
         <div class="art-body">
           <div class="art-content">
             <div class="sale-img">
-              <div class="sale-img-box">
-                <div class="round-for-men"></div>
-                <div class="sale-img-men"></div>
-              </div>              
+              <div class="sale-img-box"></div>              
             </div>
             <div class="sale-get">
               <div class="sale-get_desc">
@@ -386,8 +387,8 @@ Ut elit dui iaculis malesuada in auctor dui. Sollicitudin varius vitae ut vitae 
             </div>
             <div class="feedback-right">
               <div class="feedback-pic">
-                <div class="feedbacker-circle"></div>
-                <div class="feedbacker"></div>
+                <!-- <div class="feedbacker-circle"></div>
+                <div class="feedbacker"></div> -->
               </div>
             </div>
           </div>
