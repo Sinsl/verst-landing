@@ -234,4 +234,268 @@
   }
 
 
+  @media (max-width: 500px) {
+    body {
+      padding: 10px;
+    }
+    .logo a {
+        font-size: 14px;
+    }
+    .right-menu .bottom {
+      display: none;
+    }
+    .mob-bottom {
+      display: block;
+      height: 40px;
+      width: 40px;
+    }
+    .mob-bottom-pic {
+      background-image: url(../svg/mob-bottom-pic.svg);
+      background-repeat: no-repeat;
+      height: 100%;
+      width: 100%;
+    }
+    .h1 {
+      font-size: 36px;
+    }
+    .art-header {
+      font-size: 18px;
+    }
+    .article-first .header-section {
+      font-size: 18px;
+    }
+    .article-first .smile-section {
+      width: 45px;
+      height: 45px;
+    }
+    .article-second .art-body {
+      padding: 40px 56px;
+    }
+    .banner-second {
+      height: 350px;
+    }
+    .article-first .text-section {
+      font-size: 14px;
+    }
+    .article-second .art-header {
+      font-size: 18px;
+    }
+    .scroll-second {
+      font-size: 14px;
+    }
+    .second-right-header {
+      font-size: 26px;
+    }
+    .second-right-description {
+      padding-top: 8px;
+      font-size: 14px;
+    }
+    .second-right-text {
+      padding-top: 14px;
+    }
+    .bottom {
+      padding: 10px 24px;
+      font-size: 14px;
+    }
+      .column {
+        width: 100%;
+    }
+    .title-column {
+      font-size: 18px;
+    }
+    .description-column {
+      font-size: 14px;
+    }
+    .article-feedback {
+      padding: 10px;
+    }
+    .article-feedback .art-content {
+      padding-right: 0;
+    }
+    .feedback-header_avatar {
+      width: 48px;
+      height: 48px;
+    }
+    .feedback-header_name {
+        font-size: 18px;
+    }
+    .feedback-header_date {
+      font-size: 14px;
+    }
+    .feedback-text {
+      font-size: 14px;
+    }
+    .article-feedback .art-content {
+      gap: 16px;
+    }
+    .article-sale .art-body {
+      padding: 70px 0 0 0;
+    }
+    .faq-title h2 {
+      font-size: 18px;
+    }
+    .faq-head {
+      align-items: center;
+    }
+    .active-q .answer {
+      font-size: 14px;
+    }
+    .feedback-body {
+      padding: 50px 10px;
+    }
+    .feedback-form {
+      margin-left: 0px;
+    }
+    .feedback-discription {
+      font-size: 14px;
+    }
+    .feedback-button button {
+      font-size: 14px;
+      padding: 10px 24px;
+      border: 1px solid var(--color-blue);
+    }
+    .feedback-button {
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .footer-content {
+      font-size: 14px;
+    }
+    .footer-right .up {
+      display: none;
+    }
+    .up-mobile {
+      display: block;
+    }
+  }
+
+    @media (max-width: 350px) {
+    
+    .nav a {
+        color: #1a1a1a;
+        font-size: 20px;
+      }
+    .h1 {
+        font-size: 27px;
+        font-weight: 700;
+      }
+    .subscribe {
+        flex-wrap: wrap;
+    }
+    .text-button {
+      margin-top: 30px;
+    }
+    .banner {
+      height: 370px;
+    }
+    .art-header {
+        font-size: 18px;
+      }
+    .article-first .smile-section {
+        width: 30px;
+        height: 30px;
+      }
+    .banner-second {
+        height: 240px;
+      }
+    .second-right-header {
+        font-size: 20px;
+      }
+    .bottom {
+        max-width: 100%;
+      }
+     .column {
+          width: 100%;
+      }
+     .title-column {
+        font-size: 18px;
+      }
+    .description-column {
+        font-size: 14px;
+      }
+    .feedback-header_avatar {
+        width: 40px;
+        height: 40px;
+      }
+    .feedback-header_name {
+          font-size: 14px;
+      }
+    .feedback-header_date {
+        font-size: 10px;
+      }
+    .feedback-text {
+        font-size: 14px;
+      }
+    .article-feedback .art-content {
+        gap: 16px;
+      }
+    .article-feedback {
+        padding: 60px 10px;
+    }
+    .article-sale .art-body {
+        padding: 70px 0 0 0;
+      }
+    .sale-img-box {
+        height: 260px;
+    }
+    .mail_box {
+        flex-wrap: wrap;
+        gap: 50px;
+        width: 100%;
+    }
+    .mail_box input {
+      /* padding-left: 10px; */
+      padding: 20px 20px;
+    }
+    .mail_box button {
+      margin: 10px auto;
+    }
+    .faq-title h2 {
+        font-size: 18px;
+      }
+    .faq-head {
+        align-items: center;
+      }
+    .faq-head span {
+        font-size: 35px;
+        height: 37px;
+    }
+    .active-q .answer {
+        font-size: 10px;
+      }
+    .feedback-discription {
+        font-size: 14px;
+      }
+    .feedback-button button {
+        font-size: 14px;
+        padding: 10px 24px;
+        border: 1px solid var(--color-blue);
+      }
+    .feedback-button {
+        flex-wrap: wrap;
+        gap: 16px;
+        justify-content: center;
+      }
+    .feedback-title {
+        font-size: 18px;
+    }
+    .feedback-body {
+        padding: 80px 10px;
+    }
+    .feedback-form input {
+      font-size: 14px;
+    }
+    .feedback-form textarea {
+      font-size: 14px;
+    }
+    .footer-content {
+        font-size: 14px;
+      }
+    .footer-right .up {
+        display: none;
+      }
+    .up-mobile {
+        display: block;
+      }
+
 }
